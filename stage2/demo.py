@@ -59,9 +59,9 @@ def main():
                         help='data root directory')
     parser.add_argument('--data_type', '-dt', default='test',
                         help='')
-    parser.add_argument('--stage1_weight', '-s1w', default='../pretrained/stage1_gen_600.npz',
+    parser.add_argument('--stage1_weight', '-s1w', default='../models/stage1_gen_600.npz',
                         help='path to stage1_weight')
-    parser.add_argument('--stage2_weight', '-s2w', default='../pretrained/stage2_gen_600.npz',
+    parser.add_argument('--stage2_weight', '-s2w', default='../models/stage2_gen_600.npz',
                         help='path to stage2_weight')
 
     args = parser.parse_args()
