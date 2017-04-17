@@ -12,7 +12,7 @@ https://arxiv.org/abs/1612.03242
   - numpy 1.12.1+
   - scipy 0.13.3+
 
-# Example result on CUB
+# Experimental results on CUB
 - stage1  
 ![stage1_test](./result/stage1/test_600.jpg)
 - stage2  
@@ -25,7 +25,7 @@ cd stage2
 python demo.py -g=0
 ```
 ## Pretrained Weights
-Download pretrained weight from my google drive
+Download pretrained weight from my google drive  
 https://drive.google.com/drive/folders/0B6nc1VY-iOPZU0w2OVZBMGx3cTQ?usp=sharing
 
 Put them on `pretrained/`
