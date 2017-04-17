@@ -13,7 +13,7 @@ https://arxiv.org/abs/1612.03242
 # Test
 ## Quick Demo 
 1. Download text features from https://drive.google.com/open?id=0B3y_msrWZaXLT1BZdVdycDY5TEE and save it to `data/`
-2. Download pretrained weights from https://drive.google.com/drive/folders/0B6nc1VY-iOPZU0w2OVZBMGx3cTQ?usp=sharing and save it to `models/` 
+2. Download pretrained weights from https://drive.google.com/drive/folders/0B6nc1VY-iOPZU0w2OVZBMGx3cTQ?usp=sharing and save them to `models/` 
 3. `cd stage2`
 4. ```python
 python demo.py -g=0
@@ -22,7 +22,6 @@ python demo.py -g=0
 ## Pretrained Weights
 Download pretrained weights from my google drive
 https://drive.google.com/drive/folders/0B6nc1VY-iOPZU0w2OVZBMGx3cTQ?usp=sharing
-
 Put them on `models/`
 
 # Example result on CUB
