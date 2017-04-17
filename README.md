@@ -1,7 +1,7 @@
 # Chainer-StackGAN
 Chainer implementation of StackGAN on CUB
 >"StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks," Han Zhang, Tao Xu, Hongsheng Li, Shaoting Zhang, Xiaolei Huang, Xiaogang Wang, Dimitris Metaxas, arXiv:1612.03242.
-https://arxiv.org/abs/1612.03242
+https://arxiv.org/abs/1612.03242  
 >Original code: https://github.com/hanzhanggit/StackGAN
 
 # Requirements
@@ -15,9 +15,7 @@ https://arxiv.org/abs/1612.03242
 1. Download text features from https://drive.google.com/open?id=0B3y_msrWZaXLT1BZdVdycDY5TEE and save it to `data/`
 2. Download pretrained weights from https://drive.google.com/drive/folders/0B6nc1VY-iOPZU0w2OVZBMGx3cTQ?usp=sharing and save them to `models/` 
 3. `cd stage2`
-4. ```python
-python demo.py -g=0
-```
+4. `python demo.py -g=0`
 
 ## Pretrained Weights
 Download pretrained weights from my google drive
