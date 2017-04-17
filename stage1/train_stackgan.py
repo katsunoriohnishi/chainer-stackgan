@@ -137,8 +137,8 @@ def main():
                         help='snapshot interval epoch (default: 100)')
     parser.add_argument('--out', '-o', default='../result/stage1/'+todaydetail.strftime("%m%d_%H%M%S")+'/',
                         help='Output directory')
-    parser.add_argument('--dataset', '-d', default='cub',
-                        help='dataset type: cub or flower (default: cub)')
+    parser.add_argument('--data_dir', '-d', default='../data',
+                        help='data root directory')
     parser.add_argument('--adam_decay_epoch', '-ade', type=int, default=50,
                         help='adam decay epoch (default: 50)')
     parser.add_argument('--simple', '-s', type=bool, default=False,
@@ -153,17 +153,17 @@ def main():
 
     ### prepare dataset
     print('loading bird dataset')
-    img_train_path = '../data/'+args.dataset+'/train/76images.pickle'
+    img_train_path = args.data_dir + '/birds/train/76images.pickle'
     with open(img_train_path, 'rb') as f_in:
         x_train = pickle.load(f_in)
-    text_train_path = '../data/'+args.dataset+'/train/char-CNN-RNN-embeddings.pickle'
+    text_train_path = args.data_dir + '/birds/train/char-CNN-RNN-embeddings.pickle'
     with open(text_train_path, 'rb') as f_in:
         c_train = pickle.load(f_in)
 
-    img_test_path = '../data/'+args.dataset+'/test/76images.pickle'
+    img_test_path = args.data_dir + '/birds/test/76images.pickle'
     with open(img_test_path, 'rb') as f_in:
         x_test = pickle.load(f_in)
-    text_test_path = '../data/'+args.dataset+'/test/char-CNN-RNN-embeddings.pickle'
+    text_test_path = args.data_dir + '/birds/test/char-CNN-RNN-embeddings.pickle'
     with open(text_test_path, 'rb') as f_in:
         c_test = pickle.load(f_in)
 

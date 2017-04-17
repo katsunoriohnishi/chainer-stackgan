@@ -71,7 +71,7 @@ def main():
 
     ## dataset
     print('loading bird dataset')
-    text_test_path = args.data_dir + '/cub/test/char-CNN-RNN-embeddings.pickle'
+    text_test_path = args.data_dir + '/birds/test/char-CNN-RNN-embeddings.pickle'
     with open(text_test_path, 'rb') as f_in:
         c_test = pickle.load(f_in)
 

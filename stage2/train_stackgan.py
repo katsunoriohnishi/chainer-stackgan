@@ -151,17 +151,17 @@ def main():
 
     ## dataset
     print('loading bird dataset')
-    img_train_path = args.data_dir + '/cub/train/304images.pickle'
+    img_train_path = args.data_dir + '/birds/train/304images.pickle'
     with open(img_train_path, 'rb') as f_in:
         x_train = pickle.load(f_in)
-    text_train_path = args.data_dir + '/cub/train/char-CNN-RNN-embeddings.pickle'
+    text_train_path = args.data_dir + '/birds/train/char-CNN-RNN-embeddings.pickle'
     with open(text_train_path, 'rb') as f_in:
         c_train = pickle.load(f_in)
 
-    img_test_path = args.data_dir + '/cub/test/304images.pickle'
+    img_test_path = args.data_dir + '/birds/test/304images.pickle'
     with open(img_test_path, 'rb') as f_in:
         x_test = pickle.load(f_in)
-    text_test_path = args.data_dir + '/cub/test/char-CNN-RNN-embeddings.pickle'
+    text_test_path = args.data_dir + '/birds/test/char-CNN-RNN-embeddings.pickle'
     with open(text_test_path, 'rb') as f_in:
         c_test = pickle.load(f_in)
 
