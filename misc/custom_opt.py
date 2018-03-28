@@ -55,7 +55,7 @@ class NN_Upsampling(chainer.function.Function):
     # - coeff = 1./(self.kh*self.kw) -> coeff = 1. 
     # くらい。あとはksizeやsやpといったパラメーターを2,2,0で決め打ちにしておいた
     def backward_cpu(self, inputs, grad_outputs):
-        x=inputs
+        x = grad_outputs 
         col = conv.im2col_cpu(x[0], 2, 2, 2, 2, 0, 0)
         y = col.sum(axis=(2, 3))
         return y,
